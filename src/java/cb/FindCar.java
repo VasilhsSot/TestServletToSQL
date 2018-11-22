@@ -55,7 +55,7 @@ public class FindCar extends HttpServlet {
 			// get connection
 			conn = DriverManager.getConnection(
 					"jdbc:mysql://localhost:3306/test?useUnicode=yes&characterEncoding=UTF-8&useSSL=false", 
-					"user", "test");
+					"admin", "admin");
 
 			System.out.println(SQLStr);
 			statement = conn.createStatement();

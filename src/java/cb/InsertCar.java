@@ -52,8 +52,8 @@ public class InsertCar extends HttpServlet {
 			String regdate = request.getParameter("regdate");
 
 			try (Connection conn = DriverManager.getConnection(
-					"jdbc:mysql://" + "localhost:3306/test?useUnicode=yes&characterEncoding=UTF-8&useSSL=false", "user",
-					"test");) {
+					"jdbc:mysql://" + "localhost:3306/test?useUnicode=yes&characterEncoding=UTF-8&useSSL=false", "admin",
+					"admin");) {
 
 				SQLStr = "INSERT INTO car " + "VALUES ('" + registration + "', '" + factory + "', '" + model + "', '"
 						+ colour + "', " + cc + ", " + regdate + ");";
